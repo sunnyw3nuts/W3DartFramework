@@ -114,9 +114,9 @@ public extension UIDevice
     *     Returns a hardcoded value of the current
     * devices CPU name.
     ***********************************************/
-    public func getCPUName() -> String
+    func getCPUName() -> String
     {
-        var processorNames = Array(CPUinfo().keys)
+        let processorNames = Array(CPUinfo().keys)
         return processorNames[0]
     }
 
@@ -125,9 +125,9 @@ public extension UIDevice
     *     Returns a hardcoded value of the current
     * devices CPU speed as specified by Apple.
     ***********************************************/
-    public func getCPUSpeed() -> String
+    func getCPUSpeed() -> String
     {
-        var processorSpeed = Array(CPUinfo().values)
+        let processorSpeed = Array(CPUinfo().values)
         return processorSpeed[0]
     }
 
@@ -265,7 +265,7 @@ extension UIDevice {
     var freeDiskSpaceInBytes:Int64 {
         if #available(iOS 11.0, *) {
             if let space = try? URL(fileURLWithPath: NSHomeDirectory() as String).resourceValues(forKeys: [URLResourceKey.volumeAvailableCapacityForImportantUsageKey]).volumeAvailableCapacityForImportantUsage {
-                return space ?? 0
+                return space
             } else {
                 return 0
             }
@@ -302,11 +302,11 @@ extension UIViewController {
     }
 }
 public extension UIWindow {
-    public var visibleViewController: UIViewController? {
+    var visibleViewController: UIViewController? {
         return UIWindow.getVisibleViewControllerFrom(self.rootViewController)
     }
 
-    public static func getVisibleViewControllerFrom(_ vc: UIViewController?) -> UIViewController? {
+    static func getVisibleViewControllerFrom(_ vc: UIViewController?) -> UIViewController? {
         if let nc = vc as? UINavigationController {
             return UIWindow.getVisibleViewControllerFrom(nc.visibleViewController)
         } else if let tc = vc as? UITabBarController {

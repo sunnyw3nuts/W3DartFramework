@@ -102,7 +102,7 @@ class W3DartVC: UIViewController {
         print(self.totalTime)
         let time = self.timeFormatted(self.totalTime) // will show timer
         print("Duration = \(time)")
-        if totalTime != nil {
+        if totalTime != 0 {
             totalTime += 1  // decrease counter timer
         } else {
             if let timer = self.timer {
