@@ -16,10 +16,6 @@
 		580E863327A121CD00DB3A1D /* x@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 580E863127A121CC00DB3A1D /* x@3x.png */; };
 		580E863427A121CD00DB3A1D /* Logos@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 580E863227A121CC00DB3A1D /* Logos@3x.png */; };
 		580E86C227A2BD0500DB3A1D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580E86C127A2BD0400DB3A1D /* Validator.swift */; };
-		581B2CCA27A8F8400069409E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581B2CC927A8F8400069409E /* Media.xcassets */; };
-		584E88B527AA5D7F009A18B4 /* logo@3x.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 584E88B227AA5D7E009A18B4 /* logo@3x.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		584E88B627AA5D7F009A18B4 /* Logos@3x.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 584E88B327AA5D7E009A18B4 /* Logos@3x.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		584E88B727AA5D7F009A18B4 /* x@3x.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 584E88B427AA5D7E009A18B4 /* x@3x.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		5892B8D72771EAC900E03B9F /* W3DartFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5892B8D62771EAC900E03B9F /* W3DartFramework.docc */; };
 		5892B8D82771EAC900E03B9F /* W3DartFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5892B8D52771EAC900E03B9F /* W3DartFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5892B8DF2772F28C00E03B9F /* W3DartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892B8DE2772F28C00E03B9F /* W3DartVC.swift */; };
@@ -33,9 +29,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				584E88B527AA5D7F009A18B4 /* logo@3x.png in CopyFiles */,
-				584E88B627AA5D7F009A18B4 /* Logos@3x.png in CopyFiles */,
-				584E88B727AA5D7F009A18B4 /* x@3x.png in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +44,6 @@
 		580E863127A121CC00DB3A1D /* x@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "x@3x.png"; sourceTree = "<group>"; };
 		580E863227A121CC00DB3A1D /* Logos@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logos@3x.png"; sourceTree = "<group>"; };
 		580E86C127A2BD0400DB3A1D /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
-		581B2CC927A8F8400069409E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		584E88B227AA5D7E009A18B4 /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
-		584E88B327AA5D7E009A18B4 /* Logos@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logos@3x.png"; sourceTree = "<group>"; };
-		584E88B427AA5D7E009A18B4 /* x@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "x@3x.png"; sourceTree = "<group>"; };
 		5892B8D22771EAC900E03B9F /* W3DartFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = W3DartFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5892B8D52771EAC900E03B9F /* W3DartFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = W3DartFramework.h; sourceTree = "<group>"; };
 		5892B8D62771EAC900E03B9F /* W3DartFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = W3DartFramework.docc; sourceTree = "<group>"; };
@@ -87,9 +76,6 @@
 		5892B8C82771EAC900E03B9F = {
 			isa = PBXGroup;
 			children = (
-				584E88B227AA5D7E009A18B4 /* logo@3x.png */,
-				584E88B327AA5D7E009A18B4 /* Logos@3x.png */,
-				584E88B427AA5D7E009A18B4 /* x@3x.png */,
 				5892B8D42771EAC900E03B9F /* W3DartFramework */,
 				5892B8D32771EAC900E03B9F /* Products */,
 				58A6A78827A2CD0C00D51C51 /* Frameworks */,
@@ -111,7 +97,6 @@
 				5892B8DE2772F28C00E03B9F /* W3DartVC.swift */,
 				580E862127A11F9000DB3A1D /* Extension.swift */,
 				58A6A78E27A3AE5300D51C51 /* BubbleControl.swift */,
-				581B2CC927A8F8400069409E /* Media.xcassets */,
 				580E86C127A2BD0400DB3A1D /* Validator.swift */,
 				580E862427A11FDF00DB3A1D /* logo@3x.png */,
 				580E863127A121CC00DB3A1D /* x@3x.png */,
@@ -202,7 +187,6 @@
 			files = (
 				580E862E27A11FE800DB3A1D /* Roboto-Regular.ttf in Resources */,
 				580E862D27A11FE800DB3A1D /* Roboto-Light.ttf in Resources */,
-				581B2CCA27A8F8400069409E /* Media.xcassets in Resources */,
 				580E863027A11FE800DB3A1D /* Roboto-Bold.ttf in Resources */,
 				580E862627A11FDF00DB3A1D /* logo@3x.png in Resources */,
 				580E863427A121CD00DB3A1D /* Logos@3x.png in Resources */,

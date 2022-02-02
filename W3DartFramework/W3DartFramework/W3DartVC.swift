@@ -249,8 +249,9 @@ class W3DartVC: UIViewController {
         bubble = BubbleControl (size: CGSize(width: 80, height: 80))
 //        bubble.mainWindow = win
 //        bubble.vc = self.vc
-        bubble.image = UIImage(named: "logo.png")
-        
+        let imgLogo = ImageProvider.image(named: "logo")
+        bubble.image = imgLogo
+//        UIImage(named: "logo.png")
         bubble.didNavigationBarButtonPressed = {
             print("pressed in nav bar")
             self.bubble!.popFromNavBar()
@@ -283,13 +284,16 @@ class W3DartVC: UIViewController {
         v.backgroundColor = UIColor.white
         
         let btnClose = UIButton()
-        btnClose.setImage(UIImage(named: "x") , for: .normal)
+        let imgClose = ImageProvider.image(named: "x")
+        btnClose.setImage(imgClose , for: .normal)
         btnClose.isUserInteractionEnabled = true
         btnClose.isEnabled = true
         btnClose.addTarget(self, action: #selector(onClickClose), for: .touchUpInside)
         
         let imgLogo = UIImageView()
-        imgLogo.image = UIImage(named: "Logos")
+        let imgLogos = ImageProvider.image(named: "Logos")
+        imgLogo.image = imgLogos
+//        UIImage(named: "Logos")
         
         let scrollView = UIScrollView()
         scrollView.isScrollEnabled = true
